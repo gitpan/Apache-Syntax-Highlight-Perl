@@ -3,7 +3,7 @@ package Apache::Syntax::Highlight::Perl;
 require 5.005;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 use mod_perl;
 use constant MP2 => ($mod_perl::VERSION >= 1.99);
@@ -34,7 +34,7 @@ BEGIN {
 
 my %default_styles = (
 	'Comment_Normal'    => 'color:#006699;font-style:italic;',
-	'Comment_POD'       => 'color:#001144;font-family:garamond,serif;font-size:11pt;',
+	'Comment_POD'       => 'color:#001144;font-style:italic;',
 	'Directive'         => 'color:#339999;font-style:italic;',
 	'Label'             => 'color:#993399;font-style:italic;',
 	'Quote'             => 'color:#0000aa;',
@@ -258,11 +258,11 @@ files)
 
 =over 4
 
-=item C<HighlihtCSS> string
+=item C<HighlightCSS> string
 
 This single directive sets the URL (or URI) of the custom CCS file.
 
-   PerlSetVar HighlihtCSS /highlight/perl.css
+   PerlSetVar HighlightCSS /highlight/perl.css
 
 It can be placed in server config, <VirtualHost>, <Directory>, <Location>,
 <Files> and F<.htaccess> context.  
@@ -377,11 +377,11 @@ See C<FORMAT TYPES> section of
 L<Syntax::Highlight::Perl|Syntax::Highlight::Perl> POD for more informations
 about elements currently recognized.
 
-=item C<HighlihtShowLineNumbers> On|Off
+=item C<HighlightShowLineNumbers> On|Off
 
 This single directive displays line numbers to the right of the text
 
-   PerlSetVar HighlihtShowLineNumbers On
+   PerlSetVar HighlightShowLineNumbers On
 
 It can be placed in server config, <VirtualHost>, <Directory>, <Location>,
 <Files> and F<.htaccess> context. The default value is C<Off>.
@@ -437,7 +437,7 @@ Patches are welcome and I'll update the module if any problems will be found.
 
 =head1 VERSION
 
-Version 1.00
+Version 1.01
 
 =head1 TODO
 

@@ -1,4 +1,4 @@
-Apache-Syntax-Highlight-Perl version 1.00
+Apache-Syntax-Highlight-Perl version 1.01
 =========================================
 
 This package is a mod_perl (1.0 and 2.0) module that provides syntax
@@ -8,8 +8,10 @@ Syntax::Highlight::Perl.
 See perldoc Apache::Syntax::Highlight::Perl for module documentation and use
 
 CHANGES FROM PREVIOUS VERSION
+
+	- Fixs documentation bugs [thanks to Ken Burcham <ken@burcham.com>]
 	
-See 'Changes' file for history revision
+See 'Changes' file in this distribution for complete history revision
 
 INSTALLATION
 
